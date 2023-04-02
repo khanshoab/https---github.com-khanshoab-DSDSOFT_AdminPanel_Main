@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat"!important;
+}
+
+body {
+  inline-size: 100%;
+  position: relative;
+  background: #ffffff;
+}
+:root {
+  --secondary-color: #f59359;
+  --box1-color: #ffffff;
+  --black-light-color: #707070;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  inline-size: 20%;
+  background-color: #f59359;
+  position: fixed;
+  block-size: 100%;
+  overflow: auto;
+  text-align: center;
+  font-weight: 600;
+}
+.sidebar .logo {
+  margin-block-end: 30%;
+}
+.sidebar .logo img {
+  inline-size: 60%;
+  margin-block-start: 20%;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 5%;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #f4762c;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  width: max-content;
+  background-color: #f4762c;
+  color: white;
+}
+
+<!-----------------------Product and Customer---------------------->
+
+.input-group{
+  padding: 1px 15px;
+}
+
+.table-responsive-lg{
+  padding-inline-start: 5rem;
+}
+.table{
+  padding-inline-start: 10px;
+}
+
+div.content {
+  margin-inline-start: 14%;
+  padding: 1px 16px;
+  block-size: 100%;
+  padding-block-start: 1%;
+}
+
+@media screen and (max-inline-size: 700px) {
+  .sidebar {
+    inline-size: 100%;
+    block-size: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: inline-start;
+  }
+  div.content {
+    margin-inline-start: 0;
+  }
+}
+
+@media screen and (max-inline-size: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+div.content h2 {
+  font-weight: 500;
+  padding-left: 5rem;
+}
+div.content .input-group {
+  inline-size: 40%;
+  border-radius: 160%;
+  margin-block-end: 20px;
+}
+.add-icon button {
+  border-radius: 13px;
+  border-color: #f59359;
+  color: #ffffff;
+  font-size: large;
+  font-weight: bolder;
+  padding: 5px;
+}
+
+.add-icon:hover {
+  cursor: pointer;
+}
+.profile img {
+  inline-size: 50px;
+  block-size: 46px;
+}
+
+.table {
+  margin-block-start: 2rem;
+  border-color: #ffffff !important;
+  inline-size: 100%;
+}
+th:nth-child(1) {
+  color: #f59359;
+}
+tr {
+  background-color: #f4f4f4;
+}
+
+<!---------------ProductForm--------------------->
+
+.form-control{
+  background-color: #f4f4f4;
+  inline-size: 762px;
+  block-size: 40px;
+  justify-content: space-between;
+}
+/* .btn{
+  block-size: 40px;
+  inline-size: 600px;
+  align-items: center;
+  margin: 1rem 4rem 4rem 15rem;
+  border-color: #f59359;
+  font-weight: bolder;
+  font-size: large;
+} */
+
+.btn{
+  background-color: #f59359;
+  background: #f59359;
+  border: #f59359;
+}
+
+.btn-1:hover{
+  background-color: #f59359;
+}
+
+.form-group{
+  display: flex;
+  padding-inline-start: 80px;
+}
+
+.input-label2{
+  padding-left: 30px;
+}
+
+.productform{
+  padding-inline-start: 10px;
+}
+
+<!---------------Order and Payment--------------------->
+/* div.row .card{
+  width: 274px!important;
+  height: 268px!important;
+} */
+div.row h5{
+  color: #f59359;
+  font-weight: 600;
+  font-size: 18px;
+  /* padding: 7px; */
+}
+div.row p{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
